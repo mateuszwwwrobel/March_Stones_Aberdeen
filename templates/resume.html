@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    
+    <div class="site-wrap">
+
+      <a href="#" class="offcanvas-toggle js-offcanvas-toggle">Menu</a>
+      <div class="offcanvas_menu" id="offcanvas_menu">
+        <ul class="mb-5">
+          <li><a href="{% url 'core:home' %}">Bio</a></li>
+          <li><a href="{% url 'core:portfolio' %}">Portfolio</a></li>
+          <li class="active"><a href="{% url 'core:resume' %}">Resume</a></li>
+          <li><a href="{% url 'core:contact' %}">Contact</a></li>
+        </ul>
+        <ul class="social">
+          <li><a target="_blank" href="https://www.facebook.com/mateusz.wrobel.796" class="mr-2 mb-2"><i class="fa fa-facebook"></i></a> </li>
+          <li><a target="_blank" href="https://github.com/mateuszwwwrobel" class="mr-2 mb-2"><i class="fa fa-github"></i></a> </li>
+          <li><a target="_blank" href="https://www.youtube.com/channel/UCqbh_cQEJo81E6RvjHllU5w/videos" class="mr-2 mb-2"><i class="fa fa-youtube"></i></a></li>
+        </ul>
+
+          </br><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+      </div>
+      
+      <aside style="background-image: url(/static/img/profile.png); transform: rotate(360deg);"></aside>
+      <main>
+        <a href="{% url 'core:home' %}" class="home-button"><span class="fa fa-home"></span></a>
+        
+      </main>
+    </div>
+
+{% endblock content %}
