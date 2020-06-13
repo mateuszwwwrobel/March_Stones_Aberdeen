@@ -8,8 +8,8 @@ app_name = 'core'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name="home"),
-    path('resume/', views.resume, name="resume"),
-    path('portfolio/', views.portfolio, name="portfolio"),
+    path('history/', views.history, name="history"),
+    path('map/', views.map, name="map"),
     path('contact/', views.contact, name="contact"),
     path('message/', views.message_sent, name="message"),
 

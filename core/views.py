@@ -1,4 +1,7 @@
 from django.shortcuts import render
+from .models import ContactMessage
+from .forms import ContactMessageForm
+
 
 # Create your views here.
 
@@ -7,14 +10,24 @@ from django.shortcuts import render
 def home(request):
     return render(request, 'index.html')
 
-def resume(request):
-    return render(request, 'resume.html')
+def history(request):
+    return render(request, 'history.html')
 
-def portfolio(request):
-    return render(request, 'portfolio.html')
+def map(request):
+    return render(request, 'map.html')
 
 def contact(request):
-    return render(request, 'contact.html')
+    form = ContactMessageForm(request.POST or None)
+
+    context = {
+        'form': form,
+    }
+
+    return render(request, 'contact.html', context)
 
 def message_sent(request):
+    form = ContactMessageForm(request.POST or None)
+    if form.is_valid:
+        form.save()
+        
     return render(request, 'message.html')

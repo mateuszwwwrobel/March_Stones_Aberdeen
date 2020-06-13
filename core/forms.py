@@ -12,12 +12,13 @@ class ContactMessageForm(forms.ModelForm):
             'message_text',
         ]
 
-        fields = {
-            'first_name': "Enter your name:",
+        labels = {
+            'first_name': "Tell us your first name:",
+            'last_name': 'Your last name:',
             'email_address': "Enter your e-mail address:",
             'phone_number': "Enter your phone number:",
             'message_text': "Write your message below:",
         }
 
-        
+
 
