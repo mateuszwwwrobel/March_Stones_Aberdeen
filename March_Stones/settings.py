@@ -22,17 +22,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'wk744=tw)i9xge*ia3e)^*izv@!x7%ve0z-4o-m9u-#zjuy6bz'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-#os.environ.get('DEBUG')
+DEBUG = os.environ.get('DEBUG')
 
 ALLOWED_HOSTS = []
 #['.herokuapp.com',]
 
-GOOGLE_MAP_API_KEY = config('GOOGLE_MAP_API_KEY')
-#os.environ.get('GOOGLE_MAP_API_KEY')
+GOOGLE_MAP_API_KEY = os.environ.get('GOOGLE_MAP_API_KEY')
 
 # Application definition
 
