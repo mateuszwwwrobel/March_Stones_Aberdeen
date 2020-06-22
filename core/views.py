@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .models import ContactMessage
 from .forms import ContactMessageForm
-
+from django.conf import settings
 
 # Create your views here.
 
@@ -14,7 +14,12 @@ def history(request):
     return render(request, 'history.html')
 
 def map(request):
-    return render(request, 'map.html')
+
+    context = {
+        'api_key': settings.GOOGLE_MAP_API_KEY,
+    }
+
+    return render(request, 'map.html', context)
 
 def contact(request):
     form = ContactMessageForm(request.POST or None)
