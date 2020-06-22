@@ -113,13 +113,13 @@ function createMarker(latlng, name, marked, access, location, index){
             </div>
             <div class="store-info-address">
                 <div class="circle">
-                    <i class="fas fa-align-justify"></i>
+                    <i class="fa fa-align-justify"></i>
                 </div>
                 Marked: ${marked}
             </div>
             <div class="store-info-number">
                 <div class="circle">
-                    <i class="fas fa-road"></i>
+                    <i class="fa fa-road"></i>
                 </div>
                 Access: ${access}
             </div>
