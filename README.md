@@ -4,9 +4,11 @@
 
 ## Technologies
 
-Django, bootstrap, google maps API.
+Django, 
+Bootstrap 4, 
+google maps API.
 
 
 ## Launch
 
-See requirements.txt 
+https://march-stones-aberdeen.herokuapp.com/
