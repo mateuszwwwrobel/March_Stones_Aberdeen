@@ -11,40 +11,35 @@
 {% endblock map%}
 
 {% block content %}
-
-          <div class="ml-5">
-            <a href="{% url 'core:home' %}" style="z-index:100;" class="home-button"><span class="fa fa-home"> Home</span></a>
-          <div class="title">Stones Locator</div>
+        <div class="row">
+            <a href="{% url 'core:home' %}" style="z-index:100;" class=" ml-5 home-button"><span class="fa fa-home"> Home</span></a>
+            <!-- <div class="title">Stones Locator</div> -->
 
             <div class="search-container">
-                  <div class="search">
-                      <input id="stone-number-input" type="text" placeholder="Enter stone number"/>
-                      <i class="fa fa-search" onclick="searchStores()"></i>
-                  </div>
-              </div>
-              <div class="stores-list-container">
-                  <div class="stores-list">
-                      <div class="store-container">
-                          <div class="store-info-container">
-                              <div class="store-address">
-                                  <span>March Stone No.1</span>
-                                  <span></span>
-                              </div>
-                              <div class="store-phone-number">57.152685,-2.584896</div>
-                          </div>
-                          <div class="store-number-container">
-                              <div class="store-number">
-                                  1
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+                <div class="search">
+                    <input id="stone-number-input" type="text" placeholder="Enter stone number"/>
+                    <i class="fa fa-search" onclick="searchStores()"></i>
+                </div>
             </div>
-          
-           
-          </div>
-
-  </div>
+            <div class="stores-list-container">
+                <div class="stores-list">
+                    <div class="store-container">
+                        <div class="store-info-container">
+                            <div class="store-address">
+                                <span>March Stone No.1</span>
+                                <span></span>
+                            </div>
+                            <div class="store-phone-number">57.152685,-2.584896</div>
+                        </div>
+                        <div class="store-number-container">
+                            <div class="store-number">
+                                1
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
   <div id='map'></div>
 
 {% endblock content %}

@@ -27,7 +27,6 @@
       
       <aside style="background-image: url(/static/img/profile.jpg);"></aside>
       <main>
-        <a href="{% url 'core:home' %}" class="home-button"><span class="fa fa-home"></span></a>
         <h1 class="mb-5">Contact Us</h1>
         <form action="{% url 'core:message' %}" method="post" id='contact-form'>
           {% csrf_token %}
