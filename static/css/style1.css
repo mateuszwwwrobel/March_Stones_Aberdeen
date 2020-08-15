@@ -15,20 +15,20 @@ body {
 .title{
     z-index: 100;
     position: absolute;
-    font-size: 88px;
+    font-size: 60px;
     font-weight: bold;
     color: #333;
     text-transform: uppercase;
     top: 100px;
-    left: 100px;
+    left: 25px;
 }
 
 .search-container{
     position: absolute;
     z-index: 100;
     top: 230px;
-    left: 100px;
-    width: 400px;
+    left: 25px;
+    width: 300px;
     height: 60px;
     background-color: #454E53;
     border-radius: 30px;
@@ -45,7 +45,7 @@ body {
 
 .search-container input{
     width: 100%;
-    font-size: 25px;
+    font-size: 22px;
     background-color: transparent;
     border: none;
     color: white;
@@ -56,18 +56,18 @@ body {
 }
 
 .search i{
-    font-size: 25px;
+    font-size: 22px;
     color: white;
     right: 50px;
 }
 
 .stores-list-container{
-    width: 350px;
+    width: 310px;
     background: white;
     position: absolute; 
     z-index: 100;
-    top: 320px;
-    left: 100px;
+    top: 300px;
+    left: 25px;
     border-radius: 30px;
     bottom: 20px;
     overflow-y: hidden;
