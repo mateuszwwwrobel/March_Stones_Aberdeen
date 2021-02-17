@@ -1,9 +1,9 @@
 
-# March_Stones_Aberdeen
+# March Stones of Aberdeen
 
 A website about March Stones of Aberdeen City. It show locations of march stones on map.
 
-![Window view]()
+![Window view](https://github.com/mateuszwwwrobel/March_Stones_Aberdeen/blob/master/static/img/preview.png)
 
 ## Getting Started
 
