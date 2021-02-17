@@ -3,42 +3,42 @@
 
 {% block content %}
 
-    <div class="site-wrap">
+<div class="site-wrap">
 
-      <a href="#" class="border px-3 py-2 bg-secondary offcanvas-toggle js-offcanvas-toggle">Menu</a>
-      <div class="offcanvas_menu" id="offcanvas_menu">
+    <a href="#" class="border px-3 py-2 bg-secondary offcanvas-toggle js-offcanvas-toggle">Menu</a>
+    <div class="offcanvas_menu" id="offcanvas_menu">
         <ul class="mb-5">
-          <li><a href="{% url 'core:home' %}">Home</a></li>
-          <li><a href="{% url 'core:history' %}">Short History</a></li>
-          <li><a href="{% url 'core:map' %}">Map</a></li>
-          <li class="active"><a href="{% url 'core:contact' %}">Contact</a></li>
+            <li><a href="{% url 'core:home' %}">Home</a></li>
+            <li><a href="{% url 'core:history' %}">Short History</a></li>
+            <li><a href="{% url 'core:map' %}">Map</a></li>
+            <li class="active"><a href="{% url 'core:contact' %}">Contact</a></li>
         </ul>
         <ul class="social">
-          <li><a target="_blank" href="https://www.facebook.com/mateusz.wrobel.796" class="mr-2 mb-2"><i class="fa fa-facebook"></i></a> </li>
-          <li><a target="_blank" href="https://github.com/mateuszwwwrobel" class="mr-2 mb-2"><i class="fa fa-github"></i></a> </li>
-          <li><a target="_blank" href="https://www.youtube.com/channel/UCqbh_cQEJo81E6RvjHllU5w/videos" class="mr-2 mb-2"><i class="fa fa-youtube"></i></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/mateusz.wrobel.796" class="mr-2 mb-2"><i
+                    class="fa fa-facebook"></i></a></li>
+            <li><a target="_blank" href="https://github.com/mateuszwwwrobel" class="mr-2 mb-2"><i
+                    class="fa fa-github"></i></a></li>
+            <li><a target="_blank" href="https://www.youtube.com/channel/UCqbh_cQEJo81E6RvjHllU5w/videos"
+                   class="mr-2 mb-2"><i class="fa fa-youtube"></i></a></li>
         </ul>
 
-          </br><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </br><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+        All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+            href="https://colorlib.com" target="_blank">Colorlib</a>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 
-      </div>
-      
-      <aside style="background-image: url(/static/img/profile.jpg);"></aside>
-      <main>
-        <h1 class="mb-5">Contact Us</h1>
-        <form action="{% url 'core:message' %}" method="post" id='contact-form'>
-          {% csrf_token %}
-            <div class="col-md-12 text-dark">
-             <b>{{ form|crispy }} </b> 
-            </div>
-            <div class="col-md-12">
-              <input type="submit" class="btn btn-primary btn-block" value="Send Message">
-            </div>  
-        </form>
-        
-      </main>
     </div>
+
+    <aside style="background-image: url(/static/img/profile.jpg);"></aside>
+    <main>
+        <h1 class="mb-5">Contact</h1>
+        <h4>Please feel free to contact if you have any question.</h4>
+        <hr>
+        <h5>Send an email to a following address:</h5>
+        <h6><a href="mailto:mateusz.wwwrobel@gmail.com">mateusz.wwwrobel@gmail.com</a></h6>
+        <hr>
+    </main>
+</div>
 
 {% endblock content %}

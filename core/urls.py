@@ -1,16 +1,15 @@
 from django.contrib import admin
 from django.urls import path
-from core import views
+from .views import HomeView, HistoryView, ContactView, MapView
 
 
 app_name = 'core'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name="home"),
-    path('history/', views.history, name="history"),
-    path('map/', views.map, name="map"),
-    path('contact/', views.contact, name="contact"),
-    path('message/', views.message_sent, name="message"),
+    path('', HomeView.as_view(), name="home"),
+    path('history/', HistoryView.as_view(), name="history"),
+    path('map/', MapView.as_view(), name="map"),
+    path('contact/', ContactView.as_view(), name="contact"),
 
     ]

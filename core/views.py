@@ -1,38 +1,31 @@
 from django.shortcuts import render
-from .models import ContactMessage
-from .forms import ContactMessageForm
 from django.conf import settings
-
-# Create your views here.
-
+from django.views.generic import TemplateView, View
 
 
-def home(request):
-    return render(request, 'index.html')
+class HomeView(TemplateView):
+    template_name = 'index.html'
 
-def history(request):
-    return render(request, 'history.html')
 
-def map(request):
+class HistoryView(TemplateView):
+    template_name = 'history.html'
 
-    context = {
-        'api_key': settings.GOOGLE_MAP_API_KEY,
-    }
 
-    return render(request, 'map.html', context)
+class ContactView(TemplateView):
+    template_name = 'contact.html'
 
-def contact(request):
-    form = ContactMessageForm(request.POST or None)
 
-    context = {
-        'form': form,
-    }
+class MapView(View):
+    def get(self, request):
 
-    return render(request, 'contact.html', context)
+        context = {
+            'api_key': settings.GOOGLE_MAP_API_KEY,
+        }
 
-def message_sent(request):
-    form = ContactMessageForm(request.POST or None)
-    if form.is_valid:
-        form.save()
-        
-    return render(request, 'message.html')
+        return render(request, 'map.html', context)
+
+
+
+
+
+
