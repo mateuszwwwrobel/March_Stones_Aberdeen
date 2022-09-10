@@ -23,9 +23,3 @@ class MapView(View):
         }
 
         return render(request, 'map.html', context)
-
-
-
-
-
-
