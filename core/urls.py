@@ -11,5 +11,4 @@ urlpatterns = [
     path('history/', HistoryView.as_view(), name="history"),
     path('map/', MapView.as_view(), name="map"),
     path('contact/', ContactView.as_view(), name="contact"),
-
     ]
