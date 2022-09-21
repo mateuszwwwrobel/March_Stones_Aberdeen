@@ -15,9 +15,9 @@ STATICFILES_DIRS = (ROOT_PROJECT_DIR / "static", )
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['172.104.232.49', '127.0.0.1']
+ALLOWED_HOSTS = ['172.104.232.49']
 
 GOOGLE_MAP_API_KEY = os.environ.get('GOOGLE_MAP_API_KEY')
 
