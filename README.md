@@ -9,9 +9,7 @@ Map view:
 ## Getting Started
 
 If you would like to visit a website please click a link below:
-(first load may take a bit longer due to herokuapp sleeping.
-)
-* [Visit website](https://march-stones-aberdeen.herokuapp.com/)
+* [Visit website](http://172.104.232.49)
 
 ## Technologies:
 
