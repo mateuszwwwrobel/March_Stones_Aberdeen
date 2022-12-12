@@ -9,7 +9,7 @@ Map view:
 ## Getting Started
 
 If you would like to visit a website please click a link below:
-* [Visit website](http://172.104.232.49)
+* [Visit website](http://marchstones.mateuszwrobel.com)
 
 ## Technologies:
 
